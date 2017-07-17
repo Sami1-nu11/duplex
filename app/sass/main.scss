@@ -1,0 +1,90 @@
+@import "var";
+@import "fonts";
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: arial,sans-serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+
+body{
+  background: url(../img/sprite/bg-sprite.png);
+}
+.wrap{
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+}
+.header{
+  background: url(../img/sprite/bg-header.png);
+  height: 46px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 11px;
+    .wrap{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+.top-menu{
+
+  li{
+
+    display: inline-block;
+
+
+
+     a{
+       color: $toptext;
+       font-size: 12px;
+       &::after{
+         content: "";
+         display: inline-block;
+         height: 8px;
+         width: 1px;
+         background: $toptext;
+         margin: 0 9px 0 9px;
+
+       }
+
+     }
+  }
+}
+.link{
+  color: $toptext;
+    a{
+      color: $toptext;
+        &:hover{
+          color:#fff;
+        }
+    }
+    .rrs{
+      text-transform: uppercase;
+    }
+    .email{
+      text-transform: capitalize;
+    }
+
+}
+.rrs-link-img{
+  margin-left:8px;
+
+}
+.logo{
+  font-family:$gotham;
+  text-transform: uppercase;
+  font-size:44px;
+  color: $textcolor;
+}
+.slogan{
+  font-family:Helvetica,sans-serif;
+  
+}
