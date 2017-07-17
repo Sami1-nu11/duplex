@@ -29,6 +29,7 @@ body{
   box-sizing: border-box;
   padding-bottom: 11px;
     .wrap{
+      min-height:100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -103,3 +104,42 @@ body{
   box-sizing: border-box;
   border:1px solid $border;
 }
+
+.main-menu{
+  border-radius: 3px 3px 0 0;
+  font-size:0;
+  background: url("../img/sprite/bg-nav.png");
+  li{
+    padding-top:1px;
+    display: inline-flex;
+    height: inherit;
+    a{
+      box-sizing: border-box;
+      position: relative;
+      border-left: 1px solid $border-left;
+      border-right: 1px solid $border-right;
+      font-size:13px;
+      text-transform: capitalize;
+      padding: 18px 22px;
+      color: $toptext;
+    }
+  }
+}
+
+.border1::after{
+  content:"";
+  border-left:1px solid $border-left;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -2px;
+}
+
+
+
+
+
+
+
+
+

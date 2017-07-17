@@ -32,6 +32,7 @@ body {
   box-sizing: border-box;
   padding-bottom: 11px; }
   .header .wrap {
+    min-height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
@@ -86,3 +87,29 @@ body {
   background: #ffffff;
   box-sizing: border-box;
   border: 1px solid #d5d5d5; }
+
+.main-menu {
+  border-radius: 3px 3px 0 0;
+  font-size: 0;
+  background: url("../img/sprite/bg-nav.png"); }
+  .main-menu li {
+    padding-top: 1px;
+    display: inline-flex;
+    height: inherit; }
+    .main-menu li a {
+      box-sizing: border-box;
+      position: relative;
+      border-left: 1px solid #595959;
+      border-right: 1px solid #2d2d2d;
+      font-size: 13px;
+      text-transform: capitalize;
+      padding: 18px 22px;
+      color: #dddddd; }
+
+.border1::after {
+  content: "";
+  border-left: 1px solid #595959;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -2px; }
