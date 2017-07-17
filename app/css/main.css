@@ -21,7 +21,7 @@ body {
   background: url(../img/sprite/bg-sprite.png); }
 
 .wrap {
-  height: 100%;
+  min-height: inherit;
   width: 940px;
   margin: 0 auto; }
 
@@ -63,8 +63,26 @@ body {
 .rrs-link-img {
   margin-left: 8px; }
 
+.logo-line {
+  min-height: 140px; }
+  .logo-line .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
 .logo {
   font-family: "Gothamblack", Tahoma, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 44px;
   color: #333333; }
+
+.slogan {
+  font-family: Helvetica,sans-serif;
+  color: #999999; }
+
+.banner {
+  height: 60px;
+  width: 468px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #d5d5d5; }

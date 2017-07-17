@@ -18,7 +18,7 @@ body{
   background: url(../img/sprite/bg-sprite.png);
 }
 .wrap{
-  height: 100%;
+  min-height: inherit;
   width: 940px;
   margin: 0 auto;
 }
@@ -78,6 +78,14 @@ body{
   margin-left:8px;
 
 }
+.logo-line{
+  min-height: 140px;
+   .wrap{
+     display: flex;
+     justify-content:space-between;
+     align-items:center;
+   }
+}
 .logo{
   font-family:$gotham;
   text-transform: uppercase;
@@ -86,5 +94,12 @@ body{
 }
 .slogan{
   font-family:Helvetica,sans-serif;
-  
+  color: $hoverborder;
+}
+.banner{
+  height: 60px;
+  width: 468px;
+  background: #ffffff;
+  box-sizing: border-box;
+  border:1px solid $border;
 }
