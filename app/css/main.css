@@ -113,3 +113,22 @@ body {
   height: 100%;
   top: 0;
   right: -2px; }
+
+.news-bar {
+  font-size: 0;
+  min-height: 380px;
+  background: url("../img/sprite/bg-new-bar.png");
+  padding: 30px 25px;
+  box-sizing: border-box; }
+
+.main-img {
+  display: inline-block;
+  height: 320px;
+  width: 430px;
+  background: #eaeaea; }
+
+.info-text {
+  display: inline-block;
+  height: 176px;
+  width: 450px;
+  text-overflow: ellipsis; }
