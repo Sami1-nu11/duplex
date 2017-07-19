@@ -86,7 +86,7 @@ body {
   width: 468px;
   background: #ffffff;
   box-sizing: border-box;
-  border: 1px solid #d5d5d5; }
+  border: 1px solid #c6c6c3; }
 
 .main-menu {
   border-radius: 3px 3px 0 0;
@@ -167,8 +167,26 @@ body {
   color: #dddddd; }
 
 .text-news {
+  color: #adacac;
   margin-top: 20px;
   font-size: 12px;
   display: block;
   height: 55px;
   overflow: hidden; }
+
+.slider {
+  position: relative;
+  min-height: 302px;
+  background: url("../img/sprite/bg-slider.png");
+  border: 1px solid #c6c6c3;
+  border-top: none;
+  box-sizing: border-box; }
+  .slider::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(225, 225, 225, 0.3); }
+
+footer {
+  height: 500px; }
