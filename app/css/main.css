@@ -175,8 +175,10 @@ body {
   overflow: hidden; }
 
 .slider {
+  z-index: 2;
+  padding: 7px 0;
   position: relative;
-  min-height: 302px;
+  height: 302px;
   background: url("../img/sprite/bg-slider.png");
   border: 1px solid #c6c6c3;
   border-top: none;
@@ -184,9 +186,25 @@ body {
   .slider::after {
     content: '';
     position: absolute;
+    top: 0;
     height: 100%;
     width: 100%;
     background: rgba(225, 225, 225, 0.3); }
+
+.slider-item {
+  width: 237px;
+  height: 100%; }
+  .slider-item .img-card-wrap {
+    padding: 2px;
+    height: 130px;
+    width: 190px;
+    background: #fff;
+    border: 1px solid red;
+    box-sizing: border-box; }
+    .slider-item .img-card-wrap .img-card {
+      height: 100%;
+      width: 100%;
+      background: #ccc; }
 
 footer {
   height: 500px; }
